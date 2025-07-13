@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIビジネス活用セミナー - 売上を10倍にするAI活用術</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #fbbf24 100%);
+            min-height: 100vh;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #fcd34d 100%);
+        }
+        .section-bg {
+            background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .blue-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        .yellow-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .box-shadow-custom {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .highlight-yellow {
+            background: linear-gradient(120deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
+        .highlight-blue {
+            background: linear-gradient(120deg, #1e40af 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-6xl font-black mb-8 text-shadow leading-tight">
+                    AIを使って売上を<br>
+                    <span class="highlight-yellow text-7xl">10倍</span>にする<br>
+                    革新的なビジネス活用術
+                </h1>
+                <p class="text-2xl mb-8 text-blue-100 font-medium">
+                    プロンプトではなく「思考構造」をAIに読み込ませる<br>
+                    本質的なAI活用メソッドを公開
+                </p>
+                <div class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full text-xl font-bold inline-block mb-12 pulse-animation">
+                    <i class="fas fa-clock mr-2"></i>
+                    限定開催！参加者募集中
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-12 text-left max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-6 text-center">
+                        <i class="fas fa-target mr-3 text-yellow-400"></i>
+                        こんな方におすすめです
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white bg-opacity-10 rounded-2xl p-6">
+                            <p class="text-lg mb-4">
+                                <i class="fas fa-check-circle text-yellow-400 mr-3"></i>
+                                ChatGPTは触ってみたけれど、<strong>「結局、仕事にどう使えばいいか分からない…」</strong>と感じている方
+                            </p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-2xl p-6">
+                            <p class="text-lg mb-4">
+                                <i class="fas fa-check-circle text-yellow-400 mr-3"></i>
+                                AIに指示（プロンプト）を出しても、<strong>「いつも期待通りの答えが返ってこない」</strong>と諦めかけている方
+                            </p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-2xl p-6">
+                            <p class="text-lg mb-4">
+                                <i class="fas fa-check-circle text-yellow-400 mr-3"></i>
+                                AIの進化についていけず、<strong>「このままだと自分の仕事がなくなるかも…」</strong>と漠然とした不安を抱えている方
+                            </p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-2xl p-6">
+                            <p class="text-lg mb-4">
+                                <i class="fas fa-check-circle text-yellow-400 mr-3"></i>
+                                AIを使って、<strong>「具体的に売上を上げたい」「新しいお客様と契約を取りたい」</strong>と考えている方
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-2xl p-6 mt-6">
+                        <p class="text-lg text-center">
+                            <i class="fas fa-lightbulb text-yellow-400 mr-3"></i>
+                            「業務効率化」だけじゃなく、AIで<strong>「新しい収入源やビジネスチャンスを生み出したい」</strong>方
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-5xl font-black text-center mb-16">
+                    <span class="highlight-blue">セミナーで得られること</span>
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-3xl p-8 box-shadow-custom hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="blue-gradient text-white rounded-2xl p-4 mb-6 text-center">
+                            <i class="fas fa-search text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">AI選択術</h3>
+                        </div>
+                        <p class="text-lg text-gray-700">
+                            AIツール選びで迷わない！<strong>「あなたにぴったりのAI」</strong>を見つける方法
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 box-shadow-custom hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="yellow-gradient text-white rounded-2xl p-4 mb-6 text-center">
+                            <i class="fas fa-bolt text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">実践術</h3>
+                        </div>
+                        <p class="text-lg text-gray-700">
+                            今日からすぐに！あなたの仕事で<strong>「すぐに役立つ」AI活用術</strong>
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 box-shadow-custom hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="blue-gradient text-white rounded-2xl p-4 mb-6 text-center">
+                            <i class="fas fa-user-tie text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">AI活用術</h3>
+                        </div>
+                        <p class="text-lg text-gray-700">
+                            まるで<strong>「優秀なアシスタント」</strong>のようにAIを使いこなす、新しい働き方
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 box-shadow-custom hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="yellow-gradient text-white rounded-2xl p-4 mb-6 text-center">
+                            <i class="fas fa-clock text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">時短術</h3>
+                        </div>
+                        <p class="text-lg text-gray-700">
+                            LPやセミナー資料作成が<strong>「たった5分で終わる」</strong>驚きのAI活用術
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 box-shadow-custom hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="blue-gradient text-white rounded-2xl p-4 mb-6 text-center">
+                            <i class="fas fa-chart-line text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">売上UP術</h3>
+                        </div>
+                        <p class="text-lg text-gray-700">
+                            ムダな時間を<strong>「10分の1」に減らし、売上を「10倍」にする</strong>AIの「頭の中」の作り方
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 box-shadow-custom hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="yellow-gradient text-white rounded-2xl p-4 mb-6 text-center">
+                            <i class="fas fa-heart text-4xl mb-2"></i>
+                            <h3 class="text-xl font-bold">心の変化</h3>
+                        </div>
+                        <p class="text-lg text-gray-700">
+                            AIを味方にしたあなたに訪れる<strong>「心の変化」</strong>と自信
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiation Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-5xl font-black mb-12">
+                    <span class="text-yellow-400">このセミナーの違い</span>
+                </h2>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-12 text-left">
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold mb-4 text-yellow-400">
+                            ⚠️ 一般的なプロンプト講座ではありません
+                        </h3>
+                        <p class="text-2xl">
+                            AIに<strong>「質問の文章（プロンプト）」</strong>を書けるだけじゃ、これからの時代は生き残れません。
+                        </p>
+                    </div>
+                    <div class="bg-yellow-400 text-blue-900 rounded-3xl p-8 text-center">
+                        <h3 class="text-3xl font-bold mb-4">
+                            <i class="fas fa-brain mr-3"></i>
+                            本当に必要なのは「思考構造」の理解
+                        </h3>
+                        <p class="text-xl">
+                            このセミナーでお伝えするのは、AIに<strong>「あなたの頭の中（思考構造）」をまるごと理解させ、まるで「あなたの分身のように動かす方法」</strong>です。
+                        </p>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <div class="bg-white bg-opacity-20 rounded-2xl p-6">
+                            <h4 class="text-2xl font-bold mb-4 text-yellow-400">
+                                <i class="fas fa-gem mr-3"></i>
+                                なぜ、このセミナーが「本質」を伝えるのか？
+                            </h4>
+                            <p class="text-lg leading-relaxed">
+                                それは、私が<strong>「AIを単なるツールではなく、ビジネスの相棒として徹底的に『調整』し、実際に数千万円規模のビジネス契約の話に発展している」</strong>という、生きた経験と実践知から生まれたメソッドだからです。
+                            </p>
+                            <p class="text-lg mt-4 text-yellow-200">
+                                巷にあふれる「プロンプトの書き方」や「ツールの機能紹介」だけでは決して辿り着けない、<strong>AIをあなたの「右腕」にするための"思考の設計図"</strong>を、このセミナーでお渡しします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Story Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-5xl font-black text-center mb-16">
+                    <span class="highlight-blue">講師の実体験</span>
+                </h2>
+                <div class="bg-white rounded-3xl p-12 box-shadow-custom">
+                    <div class="text-center mb-8">
+                        <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-5xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4">私も最初は同じでした</h3>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="bg-red-100 rounded-2xl p-6 mb-4">
+                                <i class="fas fa-question-circle text-red-500 text-4xl mb-3"></i>
+                                <h4 class="text-xl font-bold text-red-700 mb-2">過去の私</h4>
+                                <p class="text-gray-700">
+                                    「AIって難しそう…」「本当に自分の仕事に使えるの？」と感じていました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-100 rounded-2xl p-6 mb-4">
+                                <i class="fas fa-lightbulb text-blue-500 text-4xl mb-3"></i>
+                                <h4 class="text-xl font-bold text-blue-700 mb-2">転機</h4>
+                                <p class="text-gray-700">
+                                    「AIの考え方（頭の中）を理解する」ことで、まるで<strong>「言うことを聞く相棒」</strong>のようにAIを動かせるようになりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-green-100 rounded-2xl p-6 mb-4">
+                                <i class="fas fa-trophy text-green-500 text-4xl mb-3"></i>
+                                <h4 class="text-xl font-bold text-green-700 mb-2">成果</h4>
+                                <p class="text-gray-700">
+                                    AIを使って<strong>「これまでは無理だと思っていた中国企業との大型契約」</strong>まで実現できました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Future Warning Section -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-black mb-8">
+                        <span class="text-red-400">⚠️ AI時代のリアルな未来</span>
+                    </h2>
+                    <div class="bg-red-900 bg-opacity-50 rounded-3xl p-8 mb-8">
+                        <h3 class="text-3xl font-bold mb-4 text-red-300">
+                            あなたの仕事は、AIに"奪われる側"ですか？
+                        </h3>
+                        <p class="text-xl text-red-100">
+                            AIがやるのは、"人間くさいこと"です。
+                        </p>
+                    </div>
+                    <div class="bg-yellow-500 text-gray-900 rounded-3xl p-8">
+                        <h3 class="text-3xl font-bold mb-4">
+                            だからこそ必要なのは、「使われる側」から抜け出す視点。
+                        </h3>
+                        <p class="text-xl">
+                            「便利」なだけのAIは、どこにも運んでくれません。
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-12">
+                    <h3 class="text-3xl font-bold mb-6 text-center text-yellow-400">
+                        <i class="fas fa-exclamation-triangle mr-3"></i>
+                        今、行動しなければ「失う」ものが大きすぎる
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-lg mb-4">
+                                AIの進化は、待ってくれません。
+                            </p>
+                            <p class="text-lg mb-4">
+                                あなたが「もう少し様子を見よう」「いつか学べばいいや」と考えている間にも、あなたのライバルや競合他社は、AIを使いこなし、生産性を爆発させ、新しい収益を次々と生み出しています。
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-lg mb-4">
+                                AIを使いこなすか、使われる側になるか。
+                            </p>
+                            <p class="text-lg mb-4">
+                                この分かれ道は、あなたが思っているよりも、ずっと早く、ずっと厳しくなっています。
+                            </p>
+                            <p class="text-lg text-yellow-300 font-bold">
+                                「手遅れ」になる前に、この本質的な学びを手に入れることが、あなたの未来を決定づけます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Bonus Section -->
+    <section class="yellow-gradient py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-black text-white mb-8">
+                        <i class="fas fa-gift mr-4"></i>
+                        特別プレゼント
+                    </h2>
+                    <div class="bg-white rounded-3xl p-12 box-shadow-custom">
+                        <div class="text-center mb-8">
+                            <div class="bg-gradient-to-r from-blue-500 to-yellow-500 text-white rounded-2xl p-6 mb-6">
+                                <i class="fas fa-magic text-5xl mb-4"></i>
+                                <h3 class="text-3xl font-bold">
+                                    「たった5分で完成！」
+                                </h3>
+                                <p class="text-xl mt-2">
+                                    LPやセミナー資料を作る<br>
+                                    <strong>「AIかんたんテンプレート」</strong>
+                                </p>
+                            </div>
+                            <div class="bg-red-100 rounded-2xl p-6">
+                                <h4 class="text-2xl font-bold text-red-700 mb-4">
+                                    <i class="fas fa-exclamation-circle mr-2"></i>
+                                    この特典だけで即収益化可能！
+                                </h4>
+                                <p class="text-lg text-gray-700">
+                                    この特典を手にすれば、あなたは<strong>「すぐに新しいお客様を集めたり、セミナーを開催して収入を得る」</strong>ことができるレベルです。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-5xl font-black mb-8">
+                    最後の質問です
+                </h2>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-12 mb-12">
+                    <h3 class="text-3xl font-bold mb-6 text-yellow-400">
+                        あなたが今使っているAI（ChatGPT）、<br>
+                        それは本当に、<strong>「あなたが望む未来」</strong>へと導いてくれていますか？
+                    </h3>
+                    <p class="text-xl mb-8">
+                        もし、AIに「もっとこんな風に動いてほしい」「もっと成果を出したい」と感じているなら、今すぐ行動を起こす時です。
+                    </p>
+                    <div class="bg-yellow-400 text-blue-900 rounded-3xl p-8 pulse-animation">
+                        <h3 class="text-4xl font-black mb-6">
+                            <i class="fas fa-rocket mr-3"></i>
+                            今すぐセミナーに参加する
+                        </h3>
+                        <p class="text-xl mb-8">
+                            最速かつ最も効果的な「学びのショートカット」を手に入れましょう
+                        </p>
+                        <div class="bg-white rounded-2xl p-8 max-w-2xl mx-auto">
+                            <form class="space-y-6">
+                                <div>
+                                    <label class="block text-left text-gray-700 font-semibold mb-2">お名前</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-blue-500 focus:outline-none text-gray-800" placeholder="お名前を入力してください">
+                                </div>
+                                <div>
+                                    <label class="block text-left text-gray-700 font-semibold mb-2">メールアドレス</label>
+                                    <input type="email" class="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-blue-500 focus:outline-none text-gray-800" placeholder="メールアドレスを入力してください">
+                                </div>
+                                <div>
+                                    <label class="block text-left text-gray-700 font-semibold mb-2">電話番号</label>
+                                    <input type="tel" class="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-blue-500 focus:outline-none text-gray-800" placeholder="電話番号を入力してください">
+                                </div>
+                                <div>
+                                    <label class="block text-left text-gray-700 font-semibold mb-2">現在のAI活用状況</label>
+                                    <textarea class="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-blue-500 focus:outline-none text-gray-800 h-24" placeholder="現在のAI活用状況や課題をお聞かせください"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold py-4 px-8 rounded-xl text-2xl hover:from-blue-700 hover:to-blue-900 transition-all duration-300 transform hover:scale-105">
+                                    <i class="fas fa-paper-plane mr-3"></i>
+                                    今すぐ申し込む
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="text-lg text-blue-100">
+                        ※ お申し込み後、詳細な開催情報をお送りいたします<br>
+                        ※ 個人情報は厳重に管理し、セミナー運営以外には使用いたしません
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto text-center">
+                <h3 class="text-2xl font-bold mb-4">AIビジネス活用セミナー</h3>
+                <p class="text-gray-400 mb-8">
+                    売上を10倍にするAI活用術を学ぶ革新的なセミナーです
+                </p>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-500">
+                        © 2024 AIビジネス活用セミナー. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
